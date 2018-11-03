@@ -18,7 +18,7 @@ function weatherQuery(latitude, longitude) {
     
     //the Ajax call
     $.ajax({
-           URL: weatherQueryURL,
+           url: weatherQueryURL,
            method: "GET"
          })
          .then(function(response){
