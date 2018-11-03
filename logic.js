@@ -15,7 +15,7 @@ function weatherQuery(latitude, longitude) {
     // setting up the query url
     var weatherQueryURL = weatherBaseURL + "lat=" + weatherLatitudeParam  + "&lon=" + weatherLongtudeParam + "&appid=" + weatherAPIkey;
     console.log(weatherQueryURL);
-
+    
     //the Ajax call
     $.ajax({
            URL: weatherQueryURL,
@@ -27,4 +27,6 @@ function weatherQuery(latitude, longitude) {
 
          })
   }
+
+  weatherQuery(50,50);
 
