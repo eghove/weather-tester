@@ -22,7 +22,9 @@ function weatherQuery(latitude, longitude) {
            method: "GET"
          })
          .then(function(response){
-            console.log(weatherQueryURL);
+            var temperature = response.main.temp;
+            console.log(temperature);
+
          })
   }
 
