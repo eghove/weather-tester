@@ -31,7 +31,7 @@ function weatherQuery(latitude, longitude) {
             //weather description
             var weatherDescrip = response.weather.description
           
-            console.log(temperature + "" + windspeed + "" + humidity + "" + weatherDescrip);
+            console.log(temperature + " " + windspeed + " " + humidity + " " + weatherDescrip);
 
          })
   }
