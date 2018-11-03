@@ -22,7 +22,16 @@ function weatherQuery(latitude, longitude) {
            method: "GET"
          })
          .then(function(response){
-            console.log(response);
+           //capture the temperature
+            var temperature = response.main.temp;
+            //capture the windspeed
+            var windspeed = response.wind.speed;
+            //capture the humidity
+            var humidity = response.main.humidity;
+            //weather description
+            var weatherDescrip = response.weather.description
+          
+            console.log(temperature + windspeed + humidity + weatherDescrip);
 
          })
   }
