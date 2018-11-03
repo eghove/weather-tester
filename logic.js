@@ -24,6 +24,6 @@ function weatherQuery(latitude, longitude) {
          .then(function(response){
             let temp = "Temperature is: " + response.main.temp;
             console.log(temp);
-    
+         })
+  }
 
-    });
