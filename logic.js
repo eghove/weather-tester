@@ -29,7 +29,7 @@ function weatherQuery(latitude, longitude) {
             //capture the humidity
             var humidity = response.main.humidity;
             //weather description
-            var weatherDescrip = response.weather.description;
+            var weatherDescrip = "" + response.weather.description + "";
           
             console.log(temperature + " " + windspeed + " " + humidity + " " + weatherDescrip);
 
