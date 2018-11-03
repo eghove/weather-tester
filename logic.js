@@ -24,6 +24,7 @@ function weatherQuery(latitude, longitude) {
          .then(function(response){
            //capture the temperature, convert it to F
             var temperature = (response.main.temp - 273.15) * 1.80 + 32;
+            var temperature = temperature.toFixed(2);
             //capture the windspeed
             var windspeed = response.wind.speed;
             //capture the humidity
