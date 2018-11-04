@@ -241,7 +241,8 @@ function NASAQuery(latitude, longitude) {
     //the ajax call
     $.ajax({
         url: NASAQueryURL,
-        method: "GET"
+        method: "GET",
+        crossDomain: true
     })
         .then(function (response) {
             //sets the url for the image to NASAImageURL variables
