@@ -233,7 +233,7 @@ function NASAQuery(latitude, longitude) {
     const NASAAPIKey = 'z3gukqYquzKbLQXkLJFI7OpTS88qyjCZV5DbjcHc';
     //base NASA Imagery API
     //tried changing the baseURL to drop the s from NASABaseURL
-    const NASABaseURL = 'http://api.nasa.gov/planetary/earth/imagery?';
+    const NASABaseURL = 'https://api.nasa.gov/planetary/earth/imagery?';
     let longitudeParam = longitude;
     let latitudeParam = latitude;
     //setting up the query url
