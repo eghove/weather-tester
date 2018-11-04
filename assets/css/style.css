@@ -1,0 +1,24 @@
+i{
+    font-size: 100px;
+}
+
+#container_1{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: -20px;
+    margin-bottom:20px;
+    background-color: rgb(250, 248, 248, 0.7);
+}
+
+body{
+    background-image: url(../images/images.jpeg);
+    background-repeat: vertical;
+    background-size: cover;
+    height: 100vh;
+    
+   
+}
+
+#signin{
+    background-color: rgb(250, 248, 248, 0.7);
+}
