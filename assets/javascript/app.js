@@ -232,7 +232,8 @@ function NASAQuery(latitude, longitude) {
     //NASA API Key
     const NASAAPIKey = 'z3gukqYquzKbLQXkLJFI7OpTS88qyjCZV5DbjcHc';
     //base NASA Imagery API
-    const NASABaseURL = 'https://api.nasa.gov/planetary/earth/imagery?';
+    //tried changing the baseURL to drop the s from NASABaseURL
+    const NASABaseURL = 'http://api.nasa.gov/planetary/earth/imagery?';
     let longitudeParam = longitude;
     let latitudeParam = latitude;
     //setting up the query url
@@ -242,7 +243,7 @@ function NASAQuery(latitude, longitude) {
     $.ajax({
         url: NASAQueryURL,
         method: "GET",
-        crossDomain: true
+        //crossDomain: true
     })
         .then(function (response) {
             //sets the url for the image to NASAImageURL variables
